@@ -57,7 +57,9 @@ nav a i{
 }
 
 nav a i:hover{
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
 }
 
 .header-name{
@@ -71,16 +73,26 @@ nav a i:hover{
     color: var(--secondary-color);
 }
 
-.images{
+.project-presentation{
     height: 100vh;
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+}
+
+.project-presentation h1 {
+    position: absolute;
+    z-index: 2;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -20%);
 }
 
 .carousel{
     width: 70vw;
     border: 2px var(--secondary-color) solid;
+    border-radius: 5px;
  }
