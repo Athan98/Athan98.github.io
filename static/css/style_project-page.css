@@ -152,7 +152,8 @@ main{
     background-color: var(--third-color);
     border: 0.5px var(--secondary-color) solid;
     border-radius: 5px;
-    padding: 5px;
+    padding: 3px;
+    margin: 3px;
     font-weight: bold;
  }
 
