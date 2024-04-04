@@ -31,8 +31,9 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     font-size: 1.5rem;
+    height: 10vh;
 }
 
 nav {
@@ -49,7 +50,6 @@ nav a{
 nav a i{
     margin-right: 2vw;
     margin-left: 0;
-    display: block;
     padding: 10px 20px;
     color: var(--third-color);
     transition: background-color 0.3s,border-radius 0.3s,color 0.3s;
@@ -73,66 +73,97 @@ nav a i:hover{
     color: var(--secondary-color);
 }
 
-.project-presentation{
+main{
     height: 100vh;
-    width: 100vw;
-    position: relative;
-    overflow: hidden;
+}
+
+.project-presentation{
+    height: auto;
+    width: 100%;
+    margin-top: 85px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    position: relative;
 }
 
 .carousel{
-    width: 70vw;
-    border: 2px var(--secondary-color) solid;
+    width: 75%;
+    z-index: 1;
+    border: 5px solid;
+    border-color: var(--white-color);
     border-radius: 5px;
+    animation: changeColorBorder 2s infinite alternate;
+}
+
+@keyframes changeColorBorder {
+    0%{border-color: var(--white-color);}
+    50%{border-color: var(--third-color);}
+    100%{border-color: var(--secondary-color);}
  }
 
- .project-title{
-    position:absolute;
-    z-index: 2;
-    text-align: center;
-    top:80vh;
+
+
+.project-title {
+    position: absolute; /* Título absoluto */
+    width: 80%; /* Opcional: asegura que el título ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el texto */
     background-color: var(--primary-color);
-    border: 5px var(--secondary-color) solid;
-    border-radius: 20px;
-    
- }
+    border: 5px solid;
+    border-color: var(--white-color);
+    border-radius: 5px;
+    z-index: 2;
+    bottom: 0;
+    animation: changeColorBorder 2s infinite alternate;
+}
 
- .project-title h1{
-    font-size: 5rem;
+.project-title h1 {
+    font-size: 3rem;
     margin: 5px;
-    color:var(--third-color);
-    animation: changeColor 2s infinite alternate;
- }
+    color: var(--third-color);  
+}
 
  .project-description{
-    padding: 20px 100px;
+    width: 100%;
+    height: auto;
     align-items: center;
     justify-content: center;
+    display: flex;
     z-index: 1;
+ }
+
+ .text{
+    width: 80%;
     font-family: var(--secondary-font);
     color: var(--third-color);
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: lighter;
-    position: relative;
-    overflow: hidden;
+    border: 5px solid;
+    border-color: var(--white-color);
+    border-radius: 5px;
+    padding: 30px;
+    animation: changeColorBorder 2s infinite alternate;
  }
 
- @keyframes changeColor {
-    0%{color: var(--white-color);}
-    50%{color: var(--third-color);}
-    100%{color: var(--secondary-color);}
+ .text span{
+    color: var(--secondary-color);
+    background-color: var(--third-color);
+    border: 0.5px var(--secondary-color) solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
  }
 
- .project-description p{
-    text-align: left;
+ .text ul li{
+    padding: 5px;
  }
 
- .project-description ul{
-    list-style: circle;
+ .text ul{
+    list-style: lower-alpha;
  }
+
+
 
  
