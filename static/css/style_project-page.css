@@ -138,7 +138,7 @@ main{
     width: 80%;
     font-family: var(--secondary-font);
     color: var(--third-color);
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: lighter;
     border: 3px solid;
     border-color: var(--white-color);
@@ -163,6 +163,34 @@ main{
 
  .text ul{
     list-style: lower-alpha;
+ }
+
+ @media only screen and (min-width:300px) and (max-width:600px){
+
+    .project-title h1{
+        font-size: 1rem;
+    }
+
+    .text{
+        font-size: 0.5rem;
+    }
+
+ }
+
+ @media only screen and (min-width:601px) and (max-width:768px){
+
+    .project-title h1{
+        font-size: 2rem;
+    }
+
+    .text{
+        font-size: 0.8rem;
+    }
+ }
+
+ @media only screen and (min-width:769px) and (max-width:1200px){
+
+    
  }
 
 
