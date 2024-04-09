@@ -15,7 +15,7 @@ Descripción: Este archivo CSS contiene los estilos para el sitio index.html.
     --secondary-font: "Wix Madefor Text", Arial;
 }
 
-* {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -74,28 +74,81 @@ nav a i:hover{
 }
 
 main{
-    height: 90vh;
+    height: 100vh;
+    width: 100vw;
 }
 
-.project-presentation{
-    height: auto;
-    width: 100%;
-    margin-top: 85px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+.container{
+    margin-top: 40px;
+    max-width: 1200px;
+    min-width: 300px;
+    padding: 30px;
     position: relative;
+
 }
 
-.carousel{
-    width: 75%;
-    z-index: 1;
-    border: 5px solid;
-    border-color: var(--white-color);
-    border-radius: 5px;
-    animation: changeColorBorder 2s infinite alternate;
+.container ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: var(--primary-color);
+    transition: opacity .5s;
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 100%;
+}
+
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+.menu{
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    width: 2.7rem;
+    height: 2.7rem;
+    font-size: 1.1rem;
+    border: 1px var(--third-color) solid;
+    border-radius:100% ;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover{
+    background-color: var(--primary-color);
+    color: var(--third-color);
 }
 
 @keyframes changeColorBorder {
@@ -104,93 +157,99 @@ main{
     100%{border-color: var(--secondary-color);}
  }
 
-
-
-.project-title {
-    position: absolute; /* Título absoluto */
-    width: 80%; /* Opcional: asegura que el título ocupe todo el ancho del contenedor */
-    text-align: center; /* Centra el texto */
-    background-color: var(--primary-color);
-    border: 5px solid;
-    border-color: var(--white-color);
-    border-radius: 5px;
-    z-index: 2;
-    bottom: 0;
-    animation: changeColorBorder 2s infinite alternate;
-}
-
-.project-title h1 {
-    font-size: 3rem;
-    margin: 5px;
-    color: var(--third-color);  
-}
-
- .project-description{
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    z-index: 1;
- }
-
- .text{
-    width: 80%;
-    font-family: var(--secondary-font);
+ #slide1{
     color: var(--third-color);
-    font-size: 1.3rem;
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
     font-weight: lighter;
-    border: 3px solid;
-    border-color: var(--white-color);
-    border-radius: 5px;
-    padding: 30px;
-    animation: changeColorBorder 2s infinite alternate;
+    padding: 20px;
  }
 
- .text span{
-    color: var(--secondary-color);
-    background-color: var(--third-color);
-    border: 0.5px var(--secondary-color) solid;
-    border-radius: 5px;
+ #slide1 h1{
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-bottom: 10px;
+    border: 3px var(--third-color) solid;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+ }
+
+ #slide1 span{
+    display: block;
     padding: 3px;
-    margin: 3px;
-    font-weight: bold;
  }
 
- .text ul li{
-    padding: 5px;
+ #slide1 span i{
+    font-size: 0.3rem;
+    padding: 3px;
  }
 
- .text ul{
-    list-style: lower-alpha;
- }
+ @media only screen and (min-width:300px) and (max-width:499px){
 
- @media only screen and (min-width:300px) and (max-width:600px){
+    .container{
+        width: 300px;
+    } 
 
-    .project-title h1{
-        font-size: 1rem;
+    ul.slider{
+        height: 750px;
     }
 
-    .text{
+    .menu{
+        opacity: 0;
+    }
+
+    #slide1{
         font-size: 0.5rem;
-    }
+     }
 
  }
 
- @media only screen and (min-width:601px) and (max-width:768px){
+ @media only screen and (min-width:500px) and (max-width:699px){
 
-    .project-title h1{
-        font-size: 2rem;
+    .container{
+        width: 500px;
+    } 
+
+    ul.slider{
+        height: 850px;
     }
 
-    .text{
-        font-size: 0.8rem;
+    .menu li a{
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.7rem;
     }
+
+    .menu{
+        opacity: 0;
+    }
+
+
  }
 
- @media only screen and (min-width:769px) and (max-width:1200px){
+ @media only screen and (min-width:700px) and (max-width:999px){
 
-    
+    ul.slider{
+        height: 650px;
+    }
+
+    .container{
+        width: 700px;
+    } 
+
+ }
+
+ @media only screen and (min-width:1000px) and (max-width:1199px){
+    ul.slider{
+        height: 550px;
+    }
+
+    .container{
+        width: 1000px;
+    } 
  }
 
 
