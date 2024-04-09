@@ -372,7 +372,7 @@ h1 {
 }
 
 .projects-info h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     padding: 5px;
 }
@@ -395,7 +395,7 @@ h1 {
 }
 
 .contact h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     width: 100%;
     margin-bottom: 15px;
 }
@@ -458,7 +458,7 @@ h1 {
     }
 
     .text-about-me {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .education {
@@ -475,12 +475,47 @@ h1 {
     }
 
     .education ul li h3{
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .education ul li h4{
-        font-size: 0.4rem;
+        font-size: 0.8rem;
     }
+
+    .hard-skills h2{
+        font-size: 1.5rem;
+        text-align: left;  
+    }
+
+    .hard-skills span{
+        display: inline-block;
+    }
+
+    .hard-skills span i{
+        font-size: 1.2rem;
+    }
+
+    .projects h2{
+        font-size: 1.5rem;
+    }
+
+    .projects-info h2{
+        font-size: 1.5rem;
+    }
+
+    .project-technologies i {
+        font-size: 1rem;
+    }
+    
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contact a {
+        font-size: 1rem;
+        width: 100%;
+    }
+    
 
 }
 
@@ -531,16 +566,47 @@ h1 {
     }
 
     .education h2{
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         text-align: left;
     }
 
     .education ul li h3{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .education ul li h4{
-        font-size: 0.6rem;
+        font-size: 1rem;
+    }
+
+    .hard-skills h2{
+        font-size: 2.5rem;
+        text-align: left;
+        
+    }
+
+    .hard-skills span{
+        display: inline-block;
+    }
+
+    .projects h2{
+        font-size: 2.5rem;
+    }
+
+    .projects-info h2{
+        font-size: 2rem;
+    }
+
+    .project-technologies i {
+        font-size: 1.5rem;
+    }
+
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+    
+    .contact a {
+        font-size: 1.5rem;
+        width: 100%;
     }
 
 }
