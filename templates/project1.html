@@ -25,91 +25,169 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="../index.html" class="header-name">NicolásRoldan</a>
-            <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        </nav>
-    </header>
+    <div class="contenedor">
 
-    <main>
-        <div class="container">
-            <ul class="slider">
-                <li id="slide1">
-                    <h1>QuantumSys: Negocios</h1>
-                    <p><strong>"QuantumSys: Negocios"</strong> es una <strong>aplicación de escritorio</strong>
-                        desarrollada
-                        en lenguaje <strong>Java</strong>, <strong>Java GUI</strong> y <strong>Bases de datos
-                            relacionales</strong>, destinada a la gestión y administración del pequeño y mediano
-                        negocio.
-                    </p>
-                    <p>
-                        Ofrece una variedad de secciones para realizar diferentes tareas, algunas de las cuales son:
-                        <span><i class="fa-solid fa-circle"></i>Productos: Aquí se gestiona la información de los
-                            productos, incluyendo códigos
-                            únicos, nombre, descripción, disponibilidad ("DISPONIBLE, NO DISPONIBLE, SIN STOCK"),
-                            categorías, precio de costo unitario, porcentaje de ganancia sobre el precio unitario,
-                            precio de
-                            venta unitario y stock. Además, se pueden actualizar los precios de costo masivamente,
-                            por
-                            categorías, mediante la importación de archivos .xlsx, e incluso establecer precios de
-                            ventas
-                            unitarios por categoría.</span>
-                        <span><i class="fa-solid fa-circle"></i>Ventas: Se ingresan las ventas realizadas, teniendo en
-                            cuenta clientes previamente
-                            cargados, condiciones frente al I.V.A., aplicaciones de descuento y formas de
-                            pago.</span>
-                        <span><i class="fa-solid fa-circle"></i>Proveedores: Permite gestionar la información
-                            relacionada con los proveedores del
-                            negocio.</span>
-                        <span><i class="fa-solid fa-circle"></i>Estadísticas: Proporciona información detallada sobre
-                            las ventas, costos y
-                            productos más vendidos del negocio, que se puede visualizar en tablas, gráficos e
-                            incluso
-                            exportar a Excel.</span>
-                        <span><i class="fa-solid fa-circle"></i>Caja: Permite realizar operaciones como aperturas,
-                            ingresos y egresos de dinero.
-                            También se puede realizar el cierre de caja, que proporcionará un "estado de resultados"
-                            en
-                            formato de PDF, el cual será enviado automáticamente a la dirección de correo
-                            electrónico del
-                            cliente.</span>
-                        <span><i class="fa-solid fa-circle"></i>Cuentas corrientes: Permite gestionar las cuentas
-                            corrientes de los clientes del
-                            negocio. Se pueden abrir nuevas cuentas, cancelarlas (sin necesidad de que sea por el
-                            monto
-                            total), inhabilitarlas e incluso generar reportes de las mismas.</span>
+        <header>
+            <nav>
+                <a href="../index.html" class="header-name">NicolásRoldan</a>
+                <a href="../index.html" class="return"><i class="fa-solid fa-arrow-left"></i></a>
+            </nav>
+        </header>
 
-                        Si deseas conocer más detalles sobre la aplicación, no dudes en contactarme.
-                    </p>
-                </li>
-                <li id="slide2"><img src="../static/img/qs_negocios/calculo_pedido.PNG"></li>
-                <li id="slide3"><img src="../static/img/qs_negocios/cierre_caja.PNG"></li>
-                <li id="slide4"><img src="../static/img/qs_negocios/ctas_ctes.PNG"></li>
-                <li id="slide5"><img src="../static/img/qs_negocios/estadisticas.PNG"></li>
-                <li id="slide6"><img src="../static/img/qs_negocios/mov_caja.PNG"></li>
-                <li id="slide7"><img src="../static/img/qs_negocios/menu.PNG"></li>
-                <li id="slide8"><img src="../static/img/qs_negocios/productos.PNG"></li>
-                <li id="slide9"><img src="../static/img/qs_negocios/ventas.PNG"></li>
-            </ul>
+        <main>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text">
+                            <p>
+                                Quantum-Sys es un sistema de gestión de negocio para la pequeña y mediana empresa con
+                                una rotacion de productos intermedia-baja. Cuenta con secciones para la gestión y el
+                                control de stock de los productos, gestión de proveedores, gestión de clientes, gestión
+                                de cuentas corrientes y gestión de remitos, gestión de ventas y de caja. Además cuenta
+                                con una sección en donde se muestran las estadisticas mas importantes del negocio como
+                                las ventas diarias y mensuales, los costos diarios y mensuales, las ventas y costos por
+                                forma de pago, entre otros. Resulta muy intuitivo para el usuario y puede ser
+                                personalizado a sus necesidades. Cabe destacar que en prácticamente todas las secciones
+                                se encontrarán botones para exportar los datos a hojas de cálculo o resúmenes en formato
+                                PDF.
+                            </p>
+                        </div>
+                        <img src="../static/img/images-project1/Inicio.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text">
+                            <p>
+                                En la sección de productos podrás gestionar todo lo relacionado a él: su codigo, su
+                                nombre, descripción, categoría, su disponibilidad. Podrás ingresar el precio de costo en
+                                ARS o USD, y a partir de una tasa que ingreses podrás calcular el precio neto del
+                                producto. Además podrás añadirle impuestos como el de IVA con sus distintas variaciones.
+                                También podrás gestionar el stock y el tipo de unidad del producto, es decir que podrás
+                                cargar productos en litros, kilogramos, unidades, etc. Todos los productos será visibles
+                                en una pequeña tabla (que se encuentra al inferior) y podrás relizar distintas
+                                operaciones desde ahí.
+                            </p>
+                        </div>
+                        <img src="../static/img/images-project1/Productos.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text">
+                            <p>
+                                En la sección de cuentas corrientes podrás gestionar las mismas. Es decir que podrás dar
+                                de alta o de baja las cuentas corrientes de los clientes que se encuentran en la base de
+                                datos del sistema. Además podrás establecer un monto máximo de cuenta corriente si
+                                quieres que determinado tenga determinado límite. Ademas desde aquí, seleccionando una
+                                cuenta corriente que esté dada de alta, podrás visualizar todos los remitos que se
+                                encuentran vinculadas a la misma.
+                            </p>
+                        </div>
+                        <img src="../static/img/images-project1/Cuentas corrientes.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text">
+                            <p>
+                                En la sección de remitos podrás gestionar los mismo. Es decir, podrás generar nuevos
+                                remitos a cuentas corrientes que estén dadas de altas y habilitadas desde el sistema, y
+                                asignarle a cada remito una determinada cantidad de productos (no se incluyen los
+                                precios, estos se incluirán cuando el remito sea llamado desde la sección de ventas.
+                                Ésto es así porque está desarrollado con la idea de siempre cobrar con precios
+                                actualizados, entonces si mantienes los precios de tus productos actualizados en el
+                                sistema, no deberías tener problemas cuando quieras cancelar los remitos).
+                            </p>
+                        </div>
+                        <img src="../static/img/images-project1/Remitos.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text">
+                            <p>
+                                En la sección de clientes podrás gestionar los mismos. Como el sistema está enlazado con
+                                el web service de AFIP, si el cliente ya se encuentra dado de alta como tributador en
+                                dicho ente, podrás buscarlo por CUIT y simplificar el proceso de carga o actualización
+                                de datos.
+                            </p>
+                        </div>
+                        <img src="../static/img/images-project1/Clientes.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text">
+                            <p>
+                                En la sección de proveedores podrás gestionar los mismos. Como el sistema está enlazado
+                                con el web service de AFIP, si el proveedor ya se encuentra dado de alta como tributador
+                                en dicho ente, podrás buscarlo por CUIT y simplificar el proceso de carga o
+                                actualización de datos.
+                            </p>
+                        </div>
+                        <img src="../static/img/images-project1/Proveedores.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text">
+                            <p>
+                                En la sección de caja podrás realizar aperturas, ingresos y egresos. Intenta simular las
+                                operaciones que se realizan en la caja diaria. Podrás llevar un control de todas las
+                                operaciones realizadas desde la ultima vez que se abrió la caja hasta el momento de
+                                cierre de la misma.
+                            </p>
+                        </div>
+                        <img src="../static/img/images-project1/Caja.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text">
+                            <p>
+                                En esta seccion podrás realizar las ventas. Puedes hacerlas a clientes que ya tengas
+                                cargados en tu sistema o a consumidor final. También desde aqui realizarás las
+                                cancelaciones de remitos asociados a las cuentas corrientes, como así tambien ventas del
+                                día. Podrás elegir las formas de pago, y vas a poder combinarlas como quieras, siempre y
+                                cuando la sumatoria de los montos sean igual o mayor al monto total. Una vez gestionado
+                                todo lo anterior, podrás realizar una factura electrónica o un comprobante común, vos
+                                decidís.
+                            </p>
+                        </div>
+                        <img src="../static/img/images-project1/Ventas.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text">
+                            <p>
+                                En esta sección podrás realizar el cierre de caja diaria. Se presentará un mini estado
+                                de resultados en donde podras observar todo lo realizado desde el momento en que se
+                                abrió la caja, de manera desglosada. Una vez ingresado el monto real, se guarda y se
+                                cierra la caja, y en ese preciso momento se envía de manera automática un informe con
+                                todo lo realizado a las direcciones de correo electronico predifinidas.
+                            </p>
+                        </div>
+                        <img src="../static/img/images-project1/Cerrar caja.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text">
+                            <p>
+                                En ésta sección podrás observar gran parte de los datos que maneja el sistema con
+                                respecto al dinero. Por ejemplo, podrás observar como fluctúan las ventas o los costos
+                                de manera diaria y mensual, todo representado con tablas y gráficos. Además podrás ver
+                                como se están cobrando las ventas clasificadas por formas de pago (Billeteras virtuales,
+                                efectivo, débito, crédito, etc.). Además tendrás acceso a un resumen de los productos
+                                que tienen mayor rotación en tu negocio. Todo ésto desarrollado a bajo la idea de que
+                                "con la información necesaria, podés tomar mejores decisiones".
+                            </p>
+                        </div>
+                        <img src="../static/img/images-project1/Estadisticas.PNG" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-            <ul class="menu">
-                <li><a href="#slide1">1</a></li>
-                <li><a href="#slide2">2</a></li>
-                <li><a href="#slide3">3</a></li>
-                <li><a href="#slide4">4</a></li>
-                <li><a href="#slide5">5</a></li>
-                <li><a href="#slide6">6</a></li>
-                <li><a href="#slide7">7</a></li>
-                <li><a href="#slide8">8</a></li>
-                <li><a href="#slide9">9</a></li>
-            </ul>
+        </main>
 
-        </div>
+        <footer></footer>
 
-    </main>
+    </div>
 
-    <footer></footer>
 
     <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
